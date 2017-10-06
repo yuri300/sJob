@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Index do Usuário";
+}
+
+<h2>Área do Usuário</h2>
+
+@using (Ajax.BeginForm("ListarEmprego", "Usuarios", new AjaxOptions { UpdateTargetId = "emprego" }))
+{
+    <h1>Pesquisar Empregado</h1>
+    @Html.Editor("emprego")
+    <input type="submit" value="Enviar" />
+}
+<div id="form">
+    @Html.ActionLink("Deletar", "Deletar", new { controller = "Usuarios" }, new { @class = "btn btn-default" })
+    @Html.ActionLink("Editar", "Editar", new { controller = "Usuarios"}, new { @class = "btn btn-default" })
+    @Html.ActionLink("Logout", "Logout", new { controller = "Usuarios" }, new { @class = "btn btn-default" })
+</div>

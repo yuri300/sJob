@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Área do Administrador</h2>
+
+@Html.ActionLink("Mostrar todos usuários", "MostrarTodos", new { controller = "Usuarios" }, new { @class = "btn btn-default" })
+@Html.ActionLink("Deletar", "Deletar", new { controller = "Usuarios" }, new { @class = "btn btn-default" })
+@Html.ActionLink("Editar", "Editar", new { controller = "Usuarios" }, new { @class = "btn btn-default" })
+@Html.ActionLink("Logout", "Logout", new { controller = "Usuarios" }, new { @class = "btn btn-default" })

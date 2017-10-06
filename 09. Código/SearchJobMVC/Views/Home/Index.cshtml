@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Search Job";
+}
+<div id="body">
+    <center>
+        <h1><b>Bem-vindo ao sJob!</b></h1><br><br><br>
+        <div id="cadastro" class="col-md-6">
+            <h2>Faça já o seu cadastro:</h2><br>
+            <h3>Encontre já um empregado ou um emprego!</h3>
+            @Html.ActionLink("Fazer Cadastro", "Cadastrar", new { controller = "Usuarios" }, new { @class = "btn btn-default" })
+            
+        </div>
+        <div id="login" class="col-md-6">
+            <h2>Ou, se já possuir cadastro<br /><br /> autentique-se</h2>
+            @Html.ActionLink("Fazer Autenticação", "Login", new { controller = "Home" }, new { @class = "btn btn-default" })
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </center>
+</div>
